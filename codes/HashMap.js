@@ -57,4 +57,13 @@ return false;
 }
 }
 }
+this.clear = function(
+{
+for (i=key.length; i>=0)
+{
+key[i] = "";
+value[i] = "";
+index = 0;
+}
+}
 }

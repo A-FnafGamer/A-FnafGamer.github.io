@@ -1,3 +1,6 @@
+<!DOCTYPE HTML>
+<html>
+<head>
 <script>
 if (localstorage.getItem("visit") == true)
 {
@@ -9,3 +12,7 @@ localStorage.setItem("visit",true);
 alert("you are new")
 }
 </script>
+</head>
+<body>
+</body>
+</html>

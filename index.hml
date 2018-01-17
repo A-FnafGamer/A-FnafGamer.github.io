@@ -1,0 +1,11 @@
+<script>
+if (localstorage.getItem("visit") == true)
+{
+alert("you have been here before");
+}
+else
+{
+localStorage.setItem("visit",true);
+alert("you are new")
+}
+</script>

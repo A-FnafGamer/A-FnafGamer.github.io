@@ -1,4 +1,4 @@
-var Player = {
+this.Player = {
 "x":0,
 "y":0,
 "width":10,

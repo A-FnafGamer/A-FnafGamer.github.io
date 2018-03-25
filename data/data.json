@@ -1,16 +1,22 @@
 {
-"paths":
+"Paths":
   {
-"current":"/data/data.json"
+  "Resources":"/data/res"
+  "Scripts":"/data/scripts/"
+  "Pages":"/pages"
+  },
+"Keys":
+  [
+  1983,
+  1987,
+  3891,
+  7891,
+  3448,
+  1209,
+  6754
+  ],
+"Projects":
+  {
+  
+  
   }
-"keys":
-[
-1983,
-1987,
-3891,
-7891,
-3448,
-1209,
-6754
-]
-}

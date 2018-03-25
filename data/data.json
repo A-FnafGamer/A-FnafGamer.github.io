@@ -1,8 +1,8 @@
 {
 "Paths":
   {
-  "Resources":"/data/res"
-  "Scripts":"/data/scripts/"
+  "Resources":"/data/res",
+  "Scripts":"/data/scripts/",
   "Pages":"/pages"
   },
 "Keys":

@@ -1,5 +1,8 @@
-function Load(path, dataType, callback)
+function Load(Request, Method, dataType, callback)
 {
  XReq = new XMLHttpRequest();
- XReq.mime
+ XReq.overrideMimeType(dataType);
+ XReq.open(Method, Request);
+ XReq.onreadystatechange = callback;
+ XReq.send();
 }

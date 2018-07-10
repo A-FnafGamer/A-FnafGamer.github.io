@@ -2,9 +2,9 @@ var _DATA_ =
 {
 Paths:
   {
-  Resources : "/data/res/",
-  Scripts : "/data/scripts/",
-  Projects : "/data/projects/"
+  Resources : "/data/Resources/",
+  Scripts : "/data/Scripts/",
+  Projects : "/data/Projects/"
   },
 Keys:
   [

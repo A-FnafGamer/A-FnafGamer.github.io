@@ -7,7 +7,7 @@
 <BODY>
   <script type="text/javascript" src="/data/Scripts/Loader.js"></script>
 <script type="text/javascript">
-  var Projects = Load("/data/data.json", "POST", "application/json", function(succeeded){if (secceeded) {fetchData(Projects)} else {throw new ReferenceError("failed to load data..."); alert("data could not be loaded\n please refresh the page, and if the problem continues please contact me on my email:\norshina.tz@gmail.com")}});
+  var Projects = Load("/data/data.json", "GET", "application/json", function(succeeded){if (succeeded) {fetchData(Projects)} else {throw new ReferenceError("failed to load data..."); alert("data could not be loaded\n please refresh the page, and if the problem continues please contact me on my email:\norshina.tz@gmail.com")}});
 </script>
 </BODY>
 </HTML>

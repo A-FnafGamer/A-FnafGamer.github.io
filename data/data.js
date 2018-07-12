@@ -1,4 +1,4 @@
-var _DATA_ =
+this._DATA_ =
 {
 Paths:
   {

@@ -11,6 +11,7 @@ keysDown:[]
 };
 
 function Startup() {
+  console.log("Starting up game: Configuring...");
   if (Config.CDM === "per_Two_Frames") {
     Config.CDRR = Config.FPS/2
   }else if (Config.CDM === "per_Frame") {

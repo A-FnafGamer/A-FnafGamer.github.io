@@ -11,7 +11,7 @@ keysDown
 };
 
 function Startup() {
-  if (Config.CDM === "per_Two_Frames) {
+  if (Config.CDM === "per_Two_Frames") {
     Config.CDRR = Config.FPS/2
   }else if (Config.CDM === "per_Frame") {
     Config.CDRR = Config.FPS;
@@ -24,5 +24,5 @@ function Startup() {
   
   
   this.tick = setInterval(tick(), 1000/Config.CDRR);
-  this.
+  //this.
 }

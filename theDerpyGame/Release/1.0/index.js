@@ -1,6 +1,6 @@
 this.onload = Startup();
 
-var Config = {
+this.Config = {
 FPS:100,
 CDM:"per_Frame",
 CanvasScale:"fill_Screen",
@@ -24,6 +24,14 @@ function Startup() {
   
   
   
-  this._tick = setInterval(tick(), 1000/Config.CDRR);
+  this._Tick = setInterval(Tick(), 1000/Config.CDRR);
   this._Game = setInterval(Frame_Render(), 1000/Config.FPS);
+}
+
+function Tick() {
+   
+}
+
+function Frame_Render() {
+   
 }

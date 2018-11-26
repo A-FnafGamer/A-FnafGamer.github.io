@@ -12,20 +12,20 @@ keysDown:[]
 
 function Startup() {
   console.log("Starting up game: Configuring...");
-  if (Config.CDM === "per_Two_Frames") {
-    Config.CDRR = Config.FPS/2
-  }else if (Config.CDM === "per_Frame") {
-    Config.CDRR = Config.FPS;
-  }else if (Config.CDM === "Per_Half_Frame") {
-    Config.CDRR = 2*Config.FPS;
+  if (this.Config.CDM === "per_Two_Frames") {
+    this.Config.CDRR = this.Config.FPS/2
+  }else if (this.Config.CDM === "per_Frame") {
+    this.Config.CDRR = this.Config.FPS;
+  }else if (this.Config.CDM === "Per_Half_Frame") {
+    this.Config.CDRR = 2*this.Config.FPS;
   }else if (Config.CDM === "Custom") {
-    Config.CDRR = Config.CustomCDRR;
+    this.Config.CDRR = this.Config.CustomCDRR;
   }
   
   
   
-  this._Tick = setInterval(Tick(), 1000/Config.CDRR);
-  this._Game = setInterval(Frame_Render(), 1000/Config.FPS);
+  this._Tick = setInterval(Tick(), 1000/this.Config.CDRR);
+  this._Game = setInterval(Frame_Render(), 1000/this.Config.FPS);
 }
 
 function Tick() {

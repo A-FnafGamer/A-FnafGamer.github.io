@@ -7,7 +7,7 @@ CanvasScale:"fill_Screen",
 CustomCDRR:60,
 CustomResCanvasWidth:1080,
 CustomResCanvasHieght:720,
-keysDown
+keysDown:[]
 };
 
 function Startup() {
@@ -23,6 +23,6 @@ function Startup() {
   
   
   
-  this.tick = setInterval(tick(), 1000/Config.CDRR);
-  //this.
+  this._tick = setInterval(tick(), 1000/Config.CDRR);
+  this._Game = setInterval(Frame_Render(), 1000/Config.FPS);
 }

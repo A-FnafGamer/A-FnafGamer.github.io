@@ -1,25 +1,25 @@
-this.onload = Startup();
+window.onload = Startup();
 
-this.Config = {
-FPS:100,
-CDM:"per_Frame",
-CanvasScale:"fill_Screen",
-CustomCDRR:60,
-CustomResCanvasWidth:1080,
-CustomResCanvasHieght:720,
+var Config = {
+FPS : 100,
+CDM : "per_Frame",
+CanvasScale : "fill_Screen",
+CustomCDRR : 60,
+CustomResCanvasWidth : 1080,
+CustomResCanvasHieght : 720,
 keysDown:[]
 };
 
 function Startup() {
   console.log("Starting up game: Configuring...");
-  if (this.Config.CDM === "per_Two_Frames") {
-    this.Config.CDRR = this.Config.FPS/2
-  }else if (this.Config.CDM === "per_Frame") {
-    this.Config.CDRR = this.Config.FPS;
-  }else if (this.Config.CDM === "Per_Half_Frame") {
-    this.Config.CDRR = 2*this.Config.FPS;
+  if (Config.CDM === "per_Two_Frames") {
+    Config.CDRR = Config.FPS/2
+  }else if (Config.CDM === "per_Frame") {
+    Config.CDRR = Config.FPS;
+  }else if (Config.CDM === "Per_Half_Frame") {
+    Config.CDRR = 2*Config.FPS;
   }else if (Config.CDM === "Custom") {
-    this.Config.CDRR = this.Config.CustomCDRR;
+    Config.CDRR = Config.CustomCDRR;
   }
   
   

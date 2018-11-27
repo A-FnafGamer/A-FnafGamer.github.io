@@ -1,5 +1,3 @@
-window.onload = Startup();
-
 var Config = {
 FPS : 100,
 CDM : "per_Frame",

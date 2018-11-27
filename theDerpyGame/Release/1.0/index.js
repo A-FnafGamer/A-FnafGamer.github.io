@@ -33,3 +33,7 @@ function Tick() {
 function Frame_Render() {
    
 }
+
+function Component (_Name, x, y) {
+  
+}

@@ -22,8 +22,8 @@ function Startup() {
   
   
   
-  this._Tick = setInterval(Tick(), 1000/this.Config.CDRR);
-  this._Game = setInterval(Frame_Render(), 1000/this.Config.FPS);
+  this._Tick = setInterval(Tick, 1000/this.Config.CDRR);
+  this._Game = setInterval(Frame_Render, 1000/this.Config.FPS);
 }
 
 function Tick() {

@@ -13,7 +13,7 @@ keysDown:[]
 var Main_Scene = document.getElementById("Scene");
 
 //the game's components(Objects)
-var test = new Component("TO", 0, 0, Main_Scene)
+var test = new Component("TO", 0, 0, Main_Scene);
 
 function Startup() {
   console.log("Starting up game: Configuring...");
@@ -53,7 +53,7 @@ function Component (_Name, _x, _y, _Color, _Scene) {
     this.ctx.beginPath();
     this.ctx.rect(100, 100, 30, 30);
     this.ctx.fillStyle = "Black";
-    this.ctx.fill():
+    this.ctx.fill();
     this.ctx.closePath();
   }
 }

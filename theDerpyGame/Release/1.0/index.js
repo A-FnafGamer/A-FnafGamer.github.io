@@ -42,7 +42,7 @@ function Frame_Render() {
 }
 
 function Component (_Name, _x, _y, _Color, _Scene) {
-  this.Name = _name;
+  this.Name = _Name;
   this.x = _x;
   this.y = _y;
   this.Color = _Color;

@@ -11,6 +11,7 @@ keysDown:[]
 
 //the game's vital Components:
 var Main_Scene = document.getElementById("Scene");
+console.log(Main_Scene);
 
 //the game's components(Objects)
 var test = new Component("TO", 0, 0, Main_Scene);

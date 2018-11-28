@@ -34,6 +34,6 @@ function Frame_Render() {
    
 }
 
-function Component (_Name, x, y) {
+function Component (_Name, _x, _y, ) {
   
 }

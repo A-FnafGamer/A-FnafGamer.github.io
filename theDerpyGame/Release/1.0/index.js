@@ -10,7 +10,7 @@ keysDown:[]
 };
 
 //the game's vital Components:
-var Main_Scene = document.getElementsById("Main");
+var Canvas = document.getElementsById("Main");
 console.log(Canvas);
 
 //the game's components(Objects)

@@ -48,7 +48,7 @@ function Component (_Name, _x, _y, _Color, _Canvas) {
   this.y = _y;
   this.Color = _Color;
   this.Canvas = _Canvas;
-  this.ctx = this.Canvas.getContext("2d");
+  this.ctx = _Canvas.getContext("2d");
   
   this.Render = function() {
     this.ctx.beginPath();

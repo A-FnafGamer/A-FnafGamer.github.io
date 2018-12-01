@@ -10,11 +10,11 @@ keysDown:[]
 };
 
 //the game's vital Components:
-var Main_Scene = document.getElementsByTagName("canvas")[0];
-console.log(Main_Scene);
+var Main_Scene = document.getElementsById("Main");
+console.log(Canvas);
 
 //the game's components(Objects)
-var test = new Component("TO", 0, 0, Main_Scene);
+var test = new Component("TO", 0, 0, Canvas);
 
 function Startup() {
   console.log("Starting up game: Configuring...");
@@ -42,13 +42,13 @@ function Frame_Render() {
    
 }
 
-function Component (_Name, _x, _y, _Color, _Scene) {
+function Component (_Name, _x, _y, _Color, _Canvas) {
   this.Name = _Name;
   this.x = _x;
   this.y = _y;
   this.Color = _Color;
-  this.Scene = _Scene;
-  this.ctx = this.Scene.getContext("2d");
+  this.Canvas = _Canvas;
+  this.ctx = this.Canvas.getContext("2d");
   
   this.Render = function() {
     this.ctx.beginPath();

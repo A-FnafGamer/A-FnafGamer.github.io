@@ -14,7 +14,7 @@ var Canvas = document.getElementById("Main");
 console.log(Canvas);
 
 //the game's components(Objects)
-var test = new Component("TO", 0, 0, "Black", Canvas);
+addComponent("Player1", 0, 0, "Black", Canvas);
 
 function Startup() {
   console.log("Starting up game: Configuring...");
@@ -35,14 +35,14 @@ function Startup() {
 }
 
 function Tick() {
-   test.Render();
-}
-
-function Frame_Render() {
    
 }
 
-function Component (_Name, _x, _y, _Color, _Canvas) {
+function Frame_Render() {
+   Player1.Render();
+}
+
+function addComponent (_Name, _x, _y, _Color, _Canvas) {
   this.Name = _Name;
   this.x = _x;
   this.y = _y;

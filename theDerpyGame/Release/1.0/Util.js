@@ -14,7 +14,7 @@ var Canvas = document.getElementById("Main");
 console.log(Canvas);
 
 //the game's components(Objects)
-var test = new Component("TO", 0, 0, Canvas);
+var test = new Component("TO", 0, 0, "Black", Canvas);
 
 function Startup() {
   console.log("Starting up game: Configuring...");
@@ -53,7 +53,7 @@ function Component (_Name, _x, _y, _Color, _Canvas) {
   this.Render = function() {
     this.ctx.beginPath();
     this.ctx.rect(100, 100, 30, 30);
-    this.ctx.fillStyle = "Black";
+    this.ctx.fillStyle = this.Color;
     this.ctx.fill();
     this.ctx.closePath();
   }

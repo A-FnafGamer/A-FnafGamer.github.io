@@ -14,7 +14,7 @@ var Canvas = document.getElementById("Main");
 console.log(Canvas);
 
 //the game's components(Objects)
-addComponent("Player1", 0, 0, "Black", Canvas);
+var Player1 = new Component("Player1", 0, 0, "Black", Canvas);
 
 function Startup() {
   console.log("Starting up game: Configuring...");

@@ -42,7 +42,7 @@ function Frame_Render() {
    Player1.Render();
 }
 
-function addComponent (_Name, _x, _y, _Color, _Canvas) {
+function Component (_Name, _x, _y, _Color, _Canvas) {
   this.Name = _Name;
   this.x = _x;
   this.y = _y;
